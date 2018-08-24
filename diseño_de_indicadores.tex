@@ -9,6 +9,9 @@
 \selectlanguage{spanish}
 \usepackage{fancyhdr}
 
+% quitar el 0.
+\renewcommand\thesection{\arabic{section}}
+
 % aqui definimos el encabezado de las paginas pares e impares.
 \lhead[x1]{\includegraphics[width=1cm]{./images/epis}}
 \chead[y1]{}
@@ -20,18 +23,6 @@
 \cfoot[c1]{}
 \rfoot[e1]{\thepage}
 \renewcommand{\footrulewidth}{1pt}
-
-% aqui definimos el encabezado y pie de pagina de la pagina inicial de un capitulo.
-\fancypagestyle{plain}{
-\fancyhead[L]{\includegraphics[width=1cm]{./images/epis}}
-\fancyhead[C]{K2}
-\fancyhead[R]{K3}
-\fancyfoot[L]{L1}
-\fancyfoot[C]{L2}
-\fancyfoot[R]{\setcounter{page}{1}}
-\renewcommand{\headrulewidth}{0.5pt}
-\renewcommand{\footrulewidth}{0.5pt}
-}
 
 \pagestyle{fancy} 
 
@@ -87,6 +78,12 @@ Esta es una plantilla simple para crear un articulo \LaTeX en español, con algu
 
 \subsection{Evaluacion del desempeño y monitoreo del progreso de los estudiantes}
 Un indicador visible es el cumplimiento de los PRE-REQUISITOS, esto de analiza con los cursos que presenten pre-requisitos dentro de la base de datos y la aprobacion de estos dentro de los cursos aprobados por cada estudiante
+\subsection{Consejería de Estudiantes}
+Un indicador visible es la frecuencia en que los estudiantes acuden a consejeria estudiantil, esto se podra corroborar en la base de datos con su registro al acudir a este servicio
+\subsection{Traslado de Estudiantes y Transferencia de Cursos}
+Un indicador visible son la procedencia de los traslados, todos los requisitos y datos del traslado como su procedencia, pais o departamente es un indicador de donde generalmente solicitan dichos traslados y toda esa dato se almacena en la base de datos
+\subsection{Requisitos de Graduación}
+Un indicador visible son los requisitos para la graduacion como el numero de creditos, horas de practicas pre-profesionales, en donde solicitaron las practicas o si varios egresados la hacen regularmente en algun estatal o privado, los datos de el grado del nuevo ingeniero de sistemas se almacenan en distintas tablas relacionadas
 
 \section{ Criterio Objetivos educacionales del programa}
 
