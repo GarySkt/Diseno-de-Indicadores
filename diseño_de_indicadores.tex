@@ -1,12 +1,41 @@
 
+
 \documentclass[12pt,a4paper]{report}
 \usepackage{graphicx}
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 \usepackage[spanish]{babel}
 \selectlanguage{spanish}
+\usepackage{fancyhdr}
+
+% aqui definimos el encabezado de las paginas pares e impares.
+\lhead[x1]{\includegraphics[width=1cm]{./images/epis}}
+\chead[y1]{}
+\rhead[z1]{Inteligencia de Negocios}
+\renewcommand{\headrulewidth}{1pt}
+
+% aqui definimos el pie de pagina de las paginas pares e impares.
+\lfoot[a1]{Ing. Patric Cuadros}
+\cfoot[c1]{}
+\rfoot[e1]{\thepage}
+\renewcommand{\footrulewidth}{1pt}
+
+% aqui definimos el encabezado y pie de pagina de la pagina inicial de un capitulo.
+\fancypagestyle{plain}{
+\fancyhead[L]{\includegraphics[width=1cm]{./images/epis}}
+\fancyhead[C]{K2}
+\fancyhead[R]{K3}
+\fancyfoot[L]{L1}
+\fancyfoot[C]{L2}
+\fancyfoot[R]{\setcounter{page}{1}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+}
+
+\pagestyle{fancy} 
+
+
 
 \begin{document}
 \begin{titlepage}
@@ -45,32 +74,53 @@ Esta es una plantilla simple para crear un articulo \LaTeX en español, con algu
 
 %% Iniciamos "secciones" que servirán como subtítulos
 %% Nota que hay otra manera de añadir acentos
-\section{Criterio ESTUDIANTES}
-\subsection{¿Cómo incluir figuras?}
-¡Tu introducción va aquí! A continuación, se enumeran algunos ejemplos de comandos y funciones de uso común para ayudarte a comenzar.
-\subsection{¿Cómo incluir figuras?}
-\section{ Criterio OBJETIVOS EDUCACIONALES DEL PROGRAMA}
 
-\section{ Criterio RESULTADOS DEL ESTUDIANTE}
 
-\section{ Criterio MEJORA CONTINUA}
+\addcontentsline{toc}{chapter}{Índice general}
+\tableofcontents
+\newpage
 
-\section{ Criterio PLAN DE ESTUDIOS  }
+\begin{Large}
+\textbf{INDICADORES} \\
+\end{Large}
+\section{Criterio estudiantes}
 
-\section{ Criterio CUERPO DE PROFESORES}
+\subsection{Evaluacion del desempeño y monitoreo del progreso de los estudiantes}
+Un indicador visible es el cumplimiento de los PRE-REQUISITOS, esto de analiza con los cursos que presenten pre-requisitos dentro de la base de datos y la aprobacion de estos dentro de los cursos aprobados por cada estudiante
 
-\section{ Criterio INSTALACIONES}
+\section{ Criterio Objetivos educacionales del programa}
 
-\section{ Criterio APOYO INSTITUCIONAL}
+\section{ Criterio resultados del estudiante}
 
-\section{ Criterio INVESTIGACIÓN}
+\section{ Criterio mejora continua}
+
+\section{ Criterio plan de estudios}
+
+\section{ Criterio cuerpo de profesores}
+
+\section{ Criterio instalaciones}
+
+\section{ Criterio apoyo institucional}
+
+\section{ Criterio investigacion}
 
 \subsection{EJEMPLO DE SUBSECCION}
 BLA BLA BLA BLA..........................
+Tareas:
+\begin{enumerate}
+    \item Ingresamos a la página web de Oracle.
+    \item Descargamos el programa, aceptamos la licencia y Descargamos el programa .
+    \item Ejecutamos el programa..
+\end{enumerate}
 ....................... BLA BLA BLA
 \subsection{EJEMPLO DE SUBSECCION}
 BLA BLA BLA BLA..........................
 ....................... BLA BLA BLA
+\begin{itemize}
+\item The first item in my list. 
+\item The second item in my list.
+\item The third item in my list.
+\end{itemize}
 Primero tienes que cargar el archivo de imagen desde su computadora usando el enlace de carga del menú del proyecto. Luego usando el comando 'includegraphics' podrás incluirlo en el documento. Con el entorno de figura y el comando de título podrás agregar un número y un título a la figura. Mira el código de la Figura \ref{fig:tesla} en esta sección para ver un ejemplo.
 
 
