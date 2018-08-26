@@ -105,7 +105,7 @@ Un indicador visible son los requisitos para la graduacion como el numero de cre
 \section{ Criterio Objetivos educacionales del programa}
 
 \section{ Criterio resultados del estudiante}
-\textbf{3.1 Indicadores para Condicion o Criterio}
+\textbf{3.1 Indicadores para Condición o Criterio}
 \begin{center}
 \includegraphics[width=15cm]{./Images/resultado}
 \end{center}	
@@ -114,7 +114,11 @@ Un indicador visible son los requisitos para la graduacion como el numero de cre
 
  Area: Facultad de Ingeniría de Sistemas
 
-\textbf{3.3 Consulta posible en SQL que ingeste este indicador}
+\textbf{3.3 Consulta posible en SQL que ingeste este indicador}\\
+
+SELECT dpto,facultad,nombre\_asignatura FROM programas
+INNER JOIN asignaturas ON programas.nombre\_facultad = asignatura.id\_asignatura
+
 
 \section{ Criterio mejora continua}
 La mejora continua es un proceso de evolución del estado actual de un proceso, en este caso el de enseñanza. Nuevas teorías y practicas son publicadas constantemente por lo que no debemos quedarnos estancados, debemos buscar adaptarnos a estos cambios ya que estos cambios son para llegar a ser mejores ingenieros.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  25 AUG 2018 20:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.8.16)  25 AUG 2018 21:41
 entering extended mode
 **./diseño_de_indicadores.tex
 (diseño_de_indicadores.tex
@@ -317,22 +317,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2 <./images/epis.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Overfull \hbox (5.39494pt too wide) in paragraph at lines 119--121
+[]\T1/cmr/m/n/12 SELECT dpto,facultad,nombre_asignatura FROM pro-gra-mas IN-NER
+ JOIN asig-
+ []
+
 File: ./images/epis.png Graphic file (type png)
 <use ./images/epis.png>
-Package pdftex.def Info: ./images/epis.png  used on input line 128.
+Package pdftex.def Info: ./images/epis.png  used on input line 132.
 (pdftex.def)             Requested size: 28.45274pt x 25.38977pt.
- [3 <./Images/resultado.png>]
+[3 <./Images/resultado.png>]
 File: ./images/epis.png Graphic file (type png)
 <use ./images/epis.png>
-Package pdftex.def Info: ./images/epis.png  used on input line 160.
+Package pdftex.def Info: ./images/epis.png  used on input line 164.
 (pdftex.def)             Requested size: 28.45274pt x 25.38977pt.
  [4]
 
-LaTeX Warning: Reference `fig:tesla' on page 5 undefined on input line 193.
+LaTeX Warning: Reference `fig:tesla' on page 5 undefined on input line 197.
 
 File: ./images/epis.png Graphic file (type png)
 <use ./images/epis.png>
-Package pdftex.def Info: ./images/epis.png  used on input line 196.
+Package pdftex.def Info: ./images/epis.png  used on input line 200.
 (pdftex.def)             Requested size: 28.45274pt x 25.38977pt.
 [5] (diseño_de_indicadores.aux
 LaTeX Info: Redefining \. on input line 6.
@@ -366,9 +376,9 @@ pk> <C:\Users\KENZO\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
 \ec\dpi600\eccc1728.pk> <C:\Users\KENZO\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
 r\jknappen\ec\dpi600\eccc2074.pk> <C:\Users\KENZO\AppData\Local\MiKTeX\2.9\font
 s\pk\ljfour\jknappen\ec\dpi600\ecxc2488.pk>
-Output written on diseño_de_indicadores.pdf (7 pages, 430282 bytes).
+Output written on diseño_de_indicadores.pdf (7 pages, 430616 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
+ 397 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
