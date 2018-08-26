@@ -1,0 +1,22 @@
+\babel@toc {spanish}{}
+\babel@toc {spanish}{}
+\contentsline {chapter}{\IeC {\'I}ndice general}{1}
+\contentsline {section}{\numberline {1}Criterio estudiantes}{2}
+\contentsline {subsection}{\numberline {1.1}Evaluacion del desempe\IeC {\~n}o y monitoreo del progreso de los estudiantes}{2}
+\contentsline {subsection}{\numberline {1.2}Consejer\IeC {\'\i }a de Estudiantes}{2}
+\contentsline {subsection}{\numberline {1.3}Traslado de Estudiantes y Transferencia de Cursos}{2}
+\contentsline {subsection}{\numberline {1.4}Requisitos de Graduaci\IeC {\'o}n}{2}
+\contentsline {section}{\numberline {2} Criterio Objetivos educacionales del programa}{3}
+\contentsline {section}{\numberline {3} Criterio resultados del estudiante}{3}
+\contentsline {section}{\numberline {4} Criterio mejora continua}{3}
+\contentsline {section}{\numberline {5} Criterio plan de estudios}{4}
+\contentsline {section}{\numberline {6} Criterio cuerpo de profesores}{4}
+\contentsline {section}{\numberline {7} Oficinas, Salas de Clase y Laboratorios}{4}
+\contentsline {subsection}{\numberline {7.1}Evaluacion del desempe\IeC {\~n}o y monitoreo del progreso de los estudiantes}{4}
+\contentsline {subsection}{\numberline {7.2}Gu\IeC {\'\i }a y Orientaci\IeC {\'o}n}{4}
+\contentsline {subsection}{\numberline {7.3}Servicios de Biblioteca}{5}
+\contentsline {subsection}{\numberline {7.4}Recursos Inform\IeC {\'a}ticos }{5}
+\contentsline {section}{\numberline {8} Criterio apoyo institucional}{5}
+\contentsline {section}{\numberline {9} Criterio investigacion}{5}
+\contentsline {subsection}{\numberline {9.1}EJEMPLO DE SUBSECCION}{5}
+\contentsline {subsection}{\numberline {9.2}EJEMPLO DE SUBSECCION}{5}
