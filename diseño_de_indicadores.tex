@@ -1,5 +1,3 @@
-
-
 \documentclass[12pt,a4paper]{report}
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
@@ -81,25 +79,25 @@ El siguiente informe trata sobre los criterios de ICACIT estableciendo los indic
 Un indicador visible es el cumplimiento de los PRE-REQUISITOS, esto de analiza con los cursos que presenten pre-requisitos dentro de la base de datos y la aprobacion de estos dentro de los cursos aprobados por cada estudiante
 \begin{itemize}
 \item Area encargada: Matricula
-\item The second item in my list.
+
 \end{itemize}
 \subsection{Consejería de Estudiantes}
 Un indicador visible es la frecuencia en que los estudiantes acuden a consejeria estudiantil, esto se podra corroborar en la base de datos con su registro al acudir a este servicio
 \begin{itemize}
 \item Area encargada: Tutoria
-\item The second item in my list.
+
 \end{itemize}
 \subsection{Traslado de Estudiantes y Transferencia de Cursos}
 Un indicador visible son la procedencia de los traslados, todos los requisitos y datos del traslado como su procedencia, pais o departamente es un indicador de donde generalmente solicitan dichos traslados y toda esa dato se almacena en la base de datos
 \begin{itemize}
 \item Area encargada: Matricula
-\item The second item in my list.
+
 \end{itemize}
 \subsection{Requisitos de Graduación}
 Un indicador visible son los requisitos para la graduacion como el numero de creditos, horas de practicas pre-profesionales, en donde solicitaron las practicas o si varios egresados la hacen regularmente en algun estatal o privado, los datos de el grado del nuevo ingeniero de sistemas se almacenan en distintas tablas relacionadas
 \begin{itemize}
 \item Area encargada: Egresados
-\item The second item in my list.
+
 \end{itemize}
 
 \section{ Criterio Objetivos educacionales del programa}
@@ -133,11 +131,13 @@ SELECT dpto,facultad,nombre\_asignatura FROM programas INNER JOIN asignaturas ON
 
 \section{ Criterio mejora continua}
 La mejora continua es un proceso de evolución del estado actual de un proceso, en este caso el de enseñanza. Nuevas teorías y practicas son publicadas constantemente por lo que no debemos quedarnos estancados, debemos buscar adaptarnos a estos cambios ya que estos cambios son para llegar a ser mejores ingenieros.
+
 \begin{itemize}
 \item Área Encargada: Docentes, Egresados.
 \item Query: SELECT eg.nombre,su.sugerencia FROM egresados eg INNER JOIN sugerencia su ON eg.id = su.egresadoid
 Esta consulta se basa en que en la reunión de docentes y egresados, los docentes les preguntan a los egresados que les sirvió mas de lo aprendido en la universidad y que les falto según su experiencia laboral.
 \end{itemize}
+
 \section{ Criterio plan de estudios}
 El plan de estudio debe especificar áreas temáticas apropiadas para la ingenería e incluir un año de una combinación de \textbf{Matemática de nivel Universitario} y \textbf{Ciencias Básicas}, un año y medio \textbf{Tópicos de Ingeniería} y \textbf{Diseño en ingenería}.
 
@@ -153,59 +153,68 @@ Select nombre From Cursos where tipo = ING
 \end{itemize}
 
 \section{ Criterio cuerpo de profesores}
+El cuerpo de profesores es fundamental como parte de la enseñaza de una facultad de la universidad, los integrantes de este grupo son buscados o seleccionados mediante un examen para proveer el mejor servicio posible.
 
+\begin{itemize}
+\item Area encargada: Facultad de Ingeniería
+
+\item Query: SELECT fa.nombre, docente.nombre FROM docentes do INNER JOIN facultadad fa ON fa.idfacultad = do.idfacultad. Esta consulta nos devolvera todos los nombres de los docentes y la facultad a la que pertenecen.
+
+\item Tabla Involucrada: Docente, Facultad.
+\end{itemize}
 
 \section{ Oficinas, Salas de Clase y Laboratorios}
 \subsection{Evaluacion del desempeño y monitoreo del progreso de los estudiantes}
 Un indicador visible es la realizacion de inventariado de los inmuebles, agrando datos como marca, color, fecha de adquisicion, etc.
 cada salon de clases esta asociado a distintos equipos como proyectores, ordenadores camaras de seguridad o servidores, ese indicador es muy util
 Hay un inidcador mucho mas importante ya que es la realizacion del inventariado y asociacion de las distintas computadoras, servidores con los laboratorios asi mismo con la composicion del hardware de cada implemento
+
 \begin{itemize}
 \item Area encargada: Almacen, Asignacion de recursos y seguridad
-\item The second item in my list.
+
 \end{itemize}
 \subsection{Guía y Orientación}
 Un indicador que se renova todos los ciclos es la capacitacion tanto de docentes y alumnos en el uso correcto de las intalacions y aula vitual, esto se da en los primeros ciclos y corroborando la asistencia de dichos alumnos y docentes de manera obligatoria
+
 \begin{itemize}
 \item Area encargada: Capacitacion
-\item The second item in my list.
+
 \end{itemize}
 \subsection{Servicios de Biblioteca}
 Es un claro indicador de la frecuencia de usos de los distintos libros, dependiendo de su area (salud, derecho, ingenieria, etc) y la cantidad que son solicitados, esto podra indicar que tipo de libros son mas requeridos constantemente tanto por docentes o estudiantes y que libros no son tan solicitados.
+
 \begin{itemize}
 \item Area encargada: Biblioteca, Almacen
-\item The second item in my list.
+
 \end{itemize}
 \subsection{Recursos Informáticos }
 Hay un indicador del tipo de ordenadores y servidores que son utilizados por los alumnos,  asi como los sistemas operativos adecuados y los softwares instalados legalmente
+
 \begin{itemize}
 \item Area encargada: Almacen, Asignacion de recursos, seguridad y TI
-\item The second item in my list.
-\end{itemize}
 
+\end{itemize}
 
 \section{ Criterio apoyo institucional}
+Criterio referido al apoyo brindado a cierto grupo de personas de pocos recursos para asistir a su carrera deseada en una Universidad. De este criterio podemos saber quienes y cuantos cuantos estudiantes pertenecientes a este servicio hay por facultad y la carrera a la que pertenecen.
+
+\begin{itemize}
+\item Area encargada: Facultad de Ingeniería
+
+\item Query: SELECT fa.nombre, es.nombre, ai.nombrealumnoi  FROM facultad fa INNER JOIN apoyoinstitucional ai ON fa.idfacultad = ai.idfacultad INNER JOIN escuela es ON fa.idfacultad = es.idfacultad. Con este query obtendremos todos los alumnos pertenecientes al servicio de apoyo con su respectiva facultad y escuela en la que estan.
+
+\item Tabla Involucrada: Facultad, Escuela, Apoyo Institucional.
+\end{itemize}
 
 \section{ Criterio investigacion}
+Este criterio se refiere a un grupo de investigacion de una facultad buscando mejorar ya sea el servicio brindado o participar en trabajos de investigacion nacionales y/o internacionales.
 
-\subsection{EJEMPLO DE SUBSECCION}
-BLA BLA BLA BLA..........................
-Tareas:
-\begin{enumerate}
-    \item Ingresamos a la página web de Oracle.
-    \item Descargamos el programa, aceptamos la licencia y Descargamos el programa .
-    \item Ejecutamos el programa..
-\end{enumerate}
-....................... BLA BLA BLA
-\subsection{EJEMPLO DE SUBSECCION}
-BLA BLA BLA BLA..........................
-....................... BLA BLA BLA
 \begin{itemize}
-\item The first item in my list. 
-\item The second item in my list.
-\item The third item in my list.
-\end{itemize}
-Primero tienes que cargar el archivo de imagen desde su computadora usando el enlace de carga del menú del proyecto. Luego usando el comando 'includegraphics' podrás incluirlo en el documento. Con el entorno de figura y el comando de título podrás agregar un número y un título a la figura. Mira el código de la Figura \ref{fig:tesla} en esta sección para ver un ejemplo.
+\item Area encargada: Facultad de Ingeniería
 
+\item Query: SELECT fa.nombre, in.nombremiembro FROM investigacion in INNER JOIN facultad fa ON in.idfacultad = fa.idfacultad. Con este query se busca saber todos los miembros del grupo de investigacion por facultad.
+
+\item Tabla Involucrada: Investifacion, Facultad.
+\end{itemize}
 
 \end{document}
